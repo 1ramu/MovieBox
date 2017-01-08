@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.baris.moviebox.MovieDetails">
+
+    <TextView
+        android:text="Title of the movie"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:id="@+id/title" />
+
+    <TextView
+        android:text="Release Date of the movie"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:id="@+id/releaseDate" />
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/poster"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/vote_average"
+        android:text="Vote Average"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:id="@+id/synopsis_sv">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:id="@+id/synopsis_tv"
+            android:layout_gravity="center_horizontal"
+            android:text="Synopsis of the movie ..."
+            />
+    </ScrollView>
+</LinearLayout>
